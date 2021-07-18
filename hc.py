@@ -1,5 +1,6 @@
 import hashlib
 from tkinter.filedialog import askopenfilename
+from tkinter import *
 
 print("-"*60)
 print("WELCOME TO HASH COMPARATOR AND GENERATOR")
@@ -51,6 +52,7 @@ def showhash():
     if select.upper() not in hashtypes:
         print("Error: Choose a listed hash.")
         showhash()
+
 
     while True:
         try:
